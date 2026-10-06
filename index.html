@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposta 3A Bosch Car Service · Pulse</title>
+<meta name="description" content="Proposta de marketing digital da Pulse Marketing Digital para a 3A Bosch Car Service, Ceres-GO.">
+<meta name="theme-color" content="#03040a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2303040a'/%3E%3Cpath d='M8 34h14l5-14 8 26 6-18 4 6h11' fill='none' stroke='%237a5cff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+@property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
+:root{
+  --bg:#03040a;
+  --white:#fff;
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.62);
+  --faint:rgba(255,255,255,.1);
+  --blue:#2f5bff;
+  --blue-2:#5b86ff;
+  --violet:#8a3cff;
+  --grad:linear-gradient(100deg,#2f5bff 0%,#6a4cff 55%,#8a3cff 100%);
+  --f:"Sora",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --gut:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--f);font-size:17px;line-height:1.65;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:700;letter-spacing:-.03em;line-height:1.08;color:var(--white)}
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--gut)}
+.lab{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+section{position:relative}
+.sec{padding-block:clamp(84px,11vw,148px)}
+
+.orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;will-change:transform}
+.o1{width:56vmax;height:56vmax;left:-20vmax;top:-18vmax;background:radial-gradient(closest-side,#2f5bff,transparent);animation:drift1 22s ease-in-out infinite alternate}
+.o2{width:48vmax;height:48vmax;right:-18vmax;top:12vh;background:radial-gradient(closest-side,#8a3cff,transparent);opacity:.4;animation:drift2 26s ease-in-out infinite alternate}
+.o3{width:40vmax;height:40vmax;left:20vw;bottom:-22vmax;background:radial-gradient(closest-side,#3a2cff,transparent);opacity:.3;animation:drift1 30s ease-in-out infinite alternate-reverse}
+@keyframes drift1{to{transform:translate(9vmax,7vmax) scale(1.15)}}
+@keyframes drift2{to{transform:translate(-8vmax,10vmax) scale(.9)}}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.14;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.rv{opacity:0;transform:translateY(28px) scale(.985);filter:blur(6px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease);transition-delay:calc(var(--i,0)*110ms)}
+.rv.in{opacity:1;transform:none;filter:none}
+.load{opacity:0;transform:translateY(24px);animation:up .9s var(--ease) forwards;animation-delay:calc(var(--d,0)*1ms)}
+@keyframes up{to{opacity:1;transform:none}}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px var(--gut);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:linear-gradient(180deg,rgba(3,4,10,.75),rgba(3,4,10,0))}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-.02em;color:var(--white);text-decoration:none}
+.logo svg{width:32px;height:32px}
+.nav .pill{color:var(--muted);padding:8px 16px;border:1px solid var(--faint);border-radius:99px;background:rgba(255,255,255,.03)}
+
+.hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(30px,5vw,80px);align-items:center;width:100%}
+.tag{display:inline-flex;align-items:center;gap:12px;padding:8px 16px 8px 12px;border:1px solid var(--faint);border-radius:99px;background:rgba(255,255,255,.04);color:var(--muted);margin-bottom:30px}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--blue-2);box-shadow:0 0 0 0 rgba(91,134,255,.7);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 12px rgba(91,134,255,0)}100%{box-shadow:0 0 0 0 rgba(91,134,255,0)}}
+.hero h1{font-size:clamp(38px,5.4vw,80px);font-weight:800;letter-spacing:-.04em;line-height:1.04}
+.mk{position:relative;display:inline-block;z-index:0;white-space:nowrap}
+.mk::before{content:"";position:absolute;left:-.08em;right:-.08em;top:.12em;bottom:-.02em;border-radius:.2em;background:var(--grad);z-index:-1;transform:scaleX(0);transform-origin:left;animation:wipe 1s 1s var(--ease) forwards;box-shadow:0 10px 50px -8px rgba(122,76,255,.8)}
+@keyframes wipe{to{transform:scaleX(1)}}
+.hero .sub{margin-top:28px;max-width:46ch;font-size:clamp(17px,1.5vw,20px);color:var(--muted)}
+.meta{margin-top:44px;display:flex;flex-wrap:wrap;gap:12px 36px;padding-top:22px;border-top:1px solid var(--faint);color:var(--muted);font-size:14px}
+.meta b{display:block;color:var(--white);font-weight:600;font-size:15px}
+
+.stage{position:relative;display:grid;place-items:center;min-height:560px}
+.phone{position:relative;width:min(280px,64vw);aspect-ratio:9/18;border-radius:38px;padding:10px;background:linear-gradient(160deg,#1b2040,#07081a);border:1px solid rgba(255,255,255,.16);box-shadow:0 40px 120px -20px rgba(80,70,255,.7),inset 0 0 0 1px rgba(255,255,255,.04);animation:float 7s ease-in-out infinite;transform:rotate(-4deg)}
+@keyframes float{50%{transform:rotate(-2deg) translateY(-14px)}}
+.screen{position:relative;height:100%;border-radius:30px;overflow:hidden;background:radial-gradient(120% 70% at 50% 100%,#8a3cff 0%,transparent 60%),radial-gradient(90% 60% at 20% 0%,#2f5bff 0%,transparent 65%),#080a1c}
+.screen .top{position:absolute;top:16px;left:16px;right:16px;display:flex;align-items:center;gap:8px;font-size:11px;font-weight:600;color:#fff}
+.screen .top i{width:22px;height:22px;border-radius:50%;background:var(--grad);border:2px solid #fff}
+.screen .pl{position:absolute;inset:0;display:grid;place-items:center}
+.screen .pl div{width:66px;height:66px;border-radius:50%;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);display:grid;place-items:center;animation:pulse 2.4s ease-out infinite}
+.screen .pl svg{width:26px;height:26px;fill:#fff;margin-left:3px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.35)}100%{box-shadow:0 0 0 30px rgba(255,255,255,0)}}
+.screen .ecg{position:absolute;left:0;right:0;bottom:92px;width:100%;height:60px}
+.screen .ecg path{stroke:#fff;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:300;stroke-dashoffset:300;animation:draw 3.2s linear infinite}
+@keyframes draw{0%{stroke-dashoffset:300}60%,100%{stroke-dashoffset:0}}
+.screen .cap{position:absolute;left:16px;right:16px;bottom:18px;font-size:12px;font-weight:600;line-height:1.35;color:#fff}
+.screen .cap small{display:block;font-weight:300;opacity:.75;margin-top:4px}
+.chip{position:absolute;z-index:3;display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:rgba(14,17,40,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 50px -14px rgba(0,0,0,.8);font-size:12.5px;font-weight:500;color:#fff;line-height:1.3;opacity:0;animation:chip 9s var(--ease) infinite}
+.chip b{display:block;font-weight:600}
+.chip span{color:var(--muted);font-weight:300}
+.chip svg{flex:none;width:32px;height:32px;padding:7px;border-radius:10px;background:var(--grad);stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.c1{left:-2%;top:12%;animation-delay:1.4s}
+.c2{right:-6%;top:42%;animation-delay:3.4s}
+.c3{left:2%;bottom:8%;animation-delay:5.4s}
+@keyframes chip{0%{opacity:0;transform:translateY(20px) scale(.92)}7%,30%{opacity:1;transform:none}38%,100%{opacity:0;transform:translateY(-14px) scale(.96)}}
+
+.mq{border-block:1px solid var(--faint);background:rgba(255,255,255,.02);overflow:hidden;padding:22px 0}
+.mq-t{display:flex;width:max-content;animation:mq 34s linear infinite}
+.mq-t span{display:flex;align-items:center;gap:28px;padding-right:28px;font-size:clamp(22px,3vw,38px);font-weight:700;letter-spacing:-.03em;color:rgba(255,255,255,.88);white-space:nowrap}
+.mq-t span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--grad)}
+.mq-t span:nth-child(even){color:transparent;-webkit-text-stroke:1.2px rgba(255,255,255,.45)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--blue-2);margin-bottom:22px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--grad);border-radius:2px}
+h2{font-size:clamp(30px,4.2vw,58px);max-width:18em}
+.lead{margin-top:22px;max-width:54ch;color:var(--muted);font-size:clamp(16px,1.4vw,19px)}
+
+.card{position:relative;border-radius:24px;padding:30px;background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.09);overflow:hidden;isolation:isolate;transition:transform .5s var(--ease),border-color .4s,opacity .9s var(--ease),filter .9s var(--ease)}
+.card::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .4s;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(106,76,255,.28),transparent 60%)}
+.card:hover{border-color:rgba(130,120,255,.45)}
+.card.in:hover{transform:translateY(-4px)}
+.card:hover::before{opacity:1}
+
+.laudo{margin-top:60px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr);gap:20px}
+.big{display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(160deg,rgba(47,91,255,.35),rgba(138,60,255,.28) 60%,rgba(255,255,255,.02));border-color:rgba(140,130,255,.35)}
+.big .n{font-size:clamp(84px,11vw,150px);font-weight:800;letter-spacing:-.06em;line-height:.9;color:#fff;margin-top:26px}
+.big .n small{font-size:.24em;letter-spacing:-.02em;margin-left:.15em;font-weight:600}
+.big p{margin-top:14px;color:rgba(255,255,255,.78);max-width:28ch}
+.mini{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:20px 16px;padding-top:24px;border-top:1px solid rgba(255,255,255,.18)}
+.mini b{display:block;font-size:30px;font-weight:700;letter-spacing:-.03em;line-height:1;color:#fff}
+.mini span{display:block;margin-top:6px;font-size:12.5px;line-height:1.35;color:rgba(255,255,255,.7)}
+.scores{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.sc{padding:24px}
+.sc .h{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.sc h3{font-size:18px;letter-spacing:-.02em}
+.sc .v{font-size:13px;font-weight:600;color:var(--blue-2);white-space:nowrap}
+.sc.bad .v{color:#b68cff}
+.bar{height:6px;border-radius:9px;background:rgba(255,255,255,.1);margin:16px 0 14px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:9px;background:var(--grad);box-shadow:0 0 18px rgba(122,76,255,.8);transition:width 1.4s .3s var(--ease)}
+.sc.in .bar i{width:calc(var(--v)*10%)}
+.sc p{font-size:14px;line-height:1.55;color:var(--muted)}
+
+.mech{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
+.st{padding:30px 28px 34px}
+.st .no{width:56px;height:56px;border-radius:18px;background:var(--grad);display:grid;place-items:center;font-weight:800;font-size:22px;color:#fff;box-shadow:0 14px 40px -8px rgba(122,76,255,.8);margin-bottom:28px}
+.st h3{font-size:clamp(20px,2vw,26px)}
+.st p{margin-top:12px;font-size:15.5px;color:var(--muted)}
+.st:not(:last-child)::after{content:"";position:absolute;right:-21px;top:58px;width:22px;height:2px;background:var(--grad);z-index:2}
+.note{margin-top:20px;display:flex;gap:22px;align-items:center;padding:26px 30px;border-radius:24px;border:1px dashed rgba(255,255,255,.22);background:rgba(255,255,255,.02)}
+.note b{font-size:clamp(18px,1.8vw,24px);font-weight:700;color:#fff;letter-spacing:-.02em;flex:0 0 38%}
+.note span{color:var(--muted);font-size:15.5px}
+
+.bento{margin-top:60px;display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.bt{padding:34px;display:flex;flex-direction:column}
+.bt.a{grid-column:span 4}.bt.b{grid-column:span 2}.bt.c{grid-column:span 2}.bt.d{grid-column:span 4}
+.bt .top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.bt .k{color:var(--blue-2)}
+.bt .q{font-size:clamp(64px,8vw,120px);font-weight:800;letter-spacing:-.06em;line-height:.85;color:#fff}
+.bt .q small{display:block;margin-top:10px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-2)}
+.bt h3{font-size:clamp(24px,2.6vw,34px);margin-top:18px}
+.bt ul{list-style:none;margin-top:18px;display:grid;gap:10px;font-size:15.5px;color:var(--muted)}
+.bt li{padding-left:24px;position:relative}
+.bt li::before{content:"";position:absolute;left:0;top:.62em;width:12px;height:2px;border-radius:2px;background:var(--grad)}
+.bt.d{background:linear-gradient(160deg,rgba(47,91,255,.22),rgba(138,60,255,.2));border-color:rgba(140,130,255,.3)}
+.bt.d .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.fine{margin-top:20px;display:flex;justify-content:space-between;gap:12px 30px;flex-wrap:wrap;font-size:14px;color:var(--muted);padding:0 6px}
+
+.kit{margin-top:60px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.tool{padding:30px 26px}
+.tool .ic{width:60px;height:60px;border-radius:20px;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);margin-bottom:22px;transition:background .4s,transform .5s var(--ease)}
+.tool:hover .ic{background:var(--grad);transform:rotate(-6deg) scale(1.06)}
+.tool svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.tool h3{font-size:19px;letter-spacing:-.02em}
+.tool p{margin-top:10px;font-size:14.5px;color:var(--muted);line-height:1.6}
+.ia{margin-top:20px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:20px;align-items:stretch}
+.ia .l{display:flex;flex-direction:column;justify-content:center}
+.ia h3{font-size:clamp(24px,2.8vw,38px)}
+.ia .rows{display:grid;gap:12px}
+.ia .r{display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:start;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);font-size:15px;color:var(--muted)}
+.ia .r b{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--blue-2);padding-top:3px}
+.ia .r.no b{color:#b68cff}
+
+.road{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rd{padding:34px 30px}
+.rd .m{display:inline-block;padding:6px 14px;border-radius:99px;background:var(--grad);color:#fff;margin-bottom:20px}
+.rd h3{font-size:clamp(22px,2.3vw,30px)}
+.rd ul{list-style:none;margin-top:18px;display:grid;gap:10px;font-size:15px;color:var(--muted)}
+.rd li{padding-left:24px;position:relative}
+.rd li::before{content:"";position:absolute;left:0;top:.5em;width:10px;height:10px;border-radius:50%;border:2px solid var(--blue-2)}
+
+.price-wrap{margin-top:56px;position:relative;border-radius:32px;padding:2px;background:conic-gradient(from var(--a),#2f5bff,#8a3cff,#03040a 40%,#2f5bff 70%,#8a3cff);animation:spin 7s linear infinite}
+@keyframes spin{to{--a:360deg}}
+.price{position:relative;border-radius:30px;background:linear-gradient(160deg,#0a0d22,#06071a);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);overflow:hidden;isolation:isolate}
+.price::before{content:"";position:absolute;left:-10%;top:-40%;width:70%;height:120%;background:radial-gradient(closest-side,rgba(106,76,255,.45),transparent);z-index:-1;filter:blur(30px)}
+.pl{padding:clamp(30px,5vw,64px)}
+.pl .val{display:flex;align-items:baseline;gap:10px;margin-top:18px;font-size:clamp(56px,8.4vw,112px);font-weight:800;letter-spacing:-.06em;line-height:.9;color:#fff}
+.pl .val small{font-size:.17em;font-weight:500;letter-spacing:0;color:var(--muted)}
+.pl .val sup{font-size:.34em;font-weight:600;letter-spacing:-.02em;align-self:flex-start;margin-top:.2em;color:var(--blue-2)}
+.pl p{margin-top:22px;color:var(--muted);max-width:40ch;font-size:15.5px}
+.pr{padding:clamp(30px,5vw,64px);border-left:1px solid var(--faint);display:grid;gap:24px;align-content:center;background:rgba(255,255,255,.02)}
+.pr div{display:grid;grid-template-columns:34px 1fr;gap:16px;font-size:14.5px;color:var(--muted);line-height:1.55}
+.pr b{display:block;color:#fff;font-weight:600;font-size:16px;margin-bottom:2px}
+.pr svg{width:34px;height:34px;padding:8px;border-radius:11px;background:rgba(255,255,255,.07);stroke:var(--blue-2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cta{position:relative;display:inline-flex;align-items:center;gap:14px;margin-top:34px;padding:19px 30px;border-radius:99px;background:var(--grad);color:#fff;font-family:var(--f);font-weight:600;font-size:17px;text-decoration:none;overflow:hidden;box-shadow:0 18px 50px -12px rgba(106,76,255,.9);transition:transform .4s var(--ease),box-shadow .4s var(--ease),opacity .9s var(--ease),filter .9s var(--ease)}
+.cta::after{content:"";position:absolute;top:0;bottom:0;width:60%;left:-80%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);animation:shine 3.6s 1.5s infinite}
+@keyframes shine{50%,100%{left:140%}}
+.cta svg{width:20px;height:20px;transition:transform .4s var(--ease)}
+.cta.in:hover{transform:translateY(-3px);box-shadow:0 24px 60px -10px rgba(138,60,255,1)}
+.cta:hover svg{transform:translateX(6px)}
+.cta:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.steps{margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.steps div{padding-top:18px;border-top:2px solid rgba(255,255,255,.14);font-size:15px;color:var(--muted)}
+.steps b{display:block;color:#fff;font-size:17px;font-weight:600;margin-bottom:4px}
+
+.fin{padding-block:clamp(84px,11vw,148px)}
+.fin .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(34px,6vw,96px);align-items:center}
+.pt{position:relative;aspect-ratio:4/5;max-width:440px;width:100%}
+.pt::before{content:"";position:absolute;inset:-3px;border-radius:34px;background:conic-gradient(from var(--a),#2f5bff,#8a3cff,#2f5bff);animation:spin 8s linear infinite;filter:blur(18px);opacity:.75}
+.pt .im{position:absolute;inset:0;border-radius:30px;overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.18)}
+.pt img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;transform:scale(1.06);transition:transform 1.6s var(--ease)}
+.pt.in img{transform:scale(1)}
+.pt .im::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(3,4,10,.85))}
+.pt .nm{position:absolute;left:22px;bottom:20px;z-index:2;color:#fff;font-size:14px;line-height:1.4}
+.pt .nm b{display:block;font-weight:600;font-size:16px}
+.skills{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px}
+.skills span{padding:10px 18px;border-radius:99px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);font-size:13px;font-weight:500;color:#fff}
+footer{padding:34px var(--gut);border-top:1px solid var(--faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:13px}
+
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr}
+  .stage{min-height:520px;margin-top:20px}
+  .laudo,.ia,.fin .wrap{grid-template-columns:1fr}
+  .kit{grid-template-columns:repeat(2,1fr)}
+  .price{grid-template-columns:1fr}
+  .pr{border-left:0;border-top:1px solid var(--faint)}
+  .bt.a,.bt.d{grid-column:span 6}.bt.b,.bt.c{grid-column:span 3}
+}
+@media (max-width:760px){
+  .mech,.road,.steps,.scores{grid-template-columns:1fr}
+  .st::after{display:none}
+  .note{flex-direction:column;align-items:flex-start}.note b{flex:none}
+  .bt.b,.bt.c{grid-column:span 6}
+  .bt.d .cols{grid-template-columns:1fr}
+  .kit{grid-template-columns:1fr}
+  .ia .r{grid-template-columns:1fr;gap:4px}
+  .c1{left:-6%}.c2{right:-4%}
+  .nav .pill{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0ms!important}
+  .rv,.load{opacity:1;transform:none;filter:none}
+  .mk::before{transform:scaleX(1)}
+  .chip{display:none}
+}
+.hero{isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1;background:url(img/mecanico.jpg) center/cover no-repeat;opacity:.55;-webkit-mask-image:linear-gradient(270deg,#000 0%,transparent 85%),linear-gradient(0deg,transparent 0,#000 35%);-webkit-mask-composite:source-in;mask-image:linear-gradient(270deg,#000 0%,transparent 90%),linear-gradient(0deg,transparent 0,#000 35%);mask-composite:intersect;animation:kb 26s ease-in-out infinite alternate}
+@keyframes kb{to{transform:scale(1.08) translateX(-1.5%)}}
+.sec.has-bg{isolation:isolate;overflow:hidden}
+.sec-bg{position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;opacity:.2;-webkit-mask-image:linear-gradient(180deg,transparent,#000 25%,#000 70%,transparent);mask-image:linear-gradient(180deg,transparent,#000 25%,#000 70%,transparent)}
+.figs{margin-top:56px;display:grid;grid-template-columns:1.25fr 1fr;gap:20px}
+.fig{position:relative;margin:0;border-radius:24px;overflow:hidden;min-height:340px;border:1px solid rgba(255,255,255,.1);isolation:isolate}
+.fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.12);transition:transform 2s var(--ease)}
+.fig.in img{transform:scale(1)}
+.fig:hover img{transform:scale(1.05)}
+.fig::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,4,10,0) 40%,rgba(3,4,10,.9)),linear-gradient(120deg,rgba(47,91,255,.25),rgba(138,60,255,.2));z-index:1}
+.fig figcaption{position:absolute;left:24px;right:24px;bottom:20px;z-index:2;color:#fff;font-size:15px;line-height:1.4}
+.fig figcaption b{display:block;font-size:19px;font-weight:700;letter-spacing:-.02em;margin-bottom:2px}
+.fig .ilu{position:absolute;top:16px;right:16px;z-index:2;padding:5px 11px;border-radius:99px;background:rgba(3,4,10,.6);backdrop-filter:blur(8px);font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:1020px){.figs{grid-template-columns:1fr}.fig{min-height:280px}}
+@media (prefers-reduced-motion:reduce){.hero-bg{animation:none}}
+</style>
+</head>
+<body>
+
+<div class="orbs" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+
+<nav class="nav">
+  <a class="logo" href="#top" aria-label="Pulse Marketing Digital">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#2f5bff"/><stop offset="1" stop-color="#8a3cff"/></linearGradient></defs><path d="M4 34h14l6-16 9 28 7-20 4 8h16" fill="none" stroke="url(#lg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Pulse
+  </a>
+  <span class="pill lab">Proposta · Out 2026</span>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <div class="tag lab load" style="--d:100"><i></i>Para a 3A Bosch Car Service · Ceres-GO</div>
+      <h1 class="load" style="--d:220">Sua oficina trabalha todo dia. Seu <span class="mk">Instagram</span> parou.</h1>
+      <p class="sub load" style="--d:420">O selo Bosch já faz a parte difícil, que é o cliente confiar. Falta mostrar o serviço acontecendo para a cidade inteira ver, e transformar isso em agendamento.</p>
+      <div class="meta load" style="--d:600">
+        <div>Feito por<b>Pulse Marketing Digital</b></div>
+        <div>Perfil analisado<b>@3aboschcarservice</b></div>
+        <div>Leitura em<b>01/10/2026</b></div>
+      </div>
+    </div>
+
+    <div class="stage load" style="--d:500" aria-hidden="true">
+      <div class="phone">
+        <div class="screen">
+          <div class="top"><i></i>3aboschcarservice</div>
+          <div class="pl"><div><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div></div>
+          <svg class="ecg" viewBox="0 0 280 60" preserveAspectRatio="none"><path d="M0 34h70l12-26 18 46 14-34 10 14h156"/></svg>
+          <div class="cap">Diagnóstico em vídeo: o que quebrou e quanto custa<small>Reel · Ceres-GO</small></div>
+        </div>
+      </div>
+      <div class="chip c1"><svg viewBox="0 0 24 24"><path d="M5 4l14 8-14 8z"/></svg><div><b>Reel publicado</b><span>Serviço real, sem encenação</span></div></div>
+      <div class="chip c2"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg><div><b>Nova mensagem</b><span>"Quero agendar uma revisão"</span></div></div>
+      <div class="chip c3"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z"/></svg><div><b>Anúncio no ar</b><span>Raio de Ceres-GO</span></div></div>
+    </div>
+  </div>
+</header>
+
+<div class="mq" aria-hidden="true">
+  <div class="mq-t">
+    <span>Reels</span><span>Stories</span><span>Tráfego pago</span><span>Copy</span><span>Design</span><span>Edição</span><span>Reels</span><span>Stories</span><span>Tráfego pago</span><span>Copy</span><span>Design</span><span>Edição</span>
+  </div>
+</div>
+
+<section class="sec" id="laudo">
+  <div class="wrap">
+    <div class="eyebrow lab rv">01 · Laudo do perfil</div>
+    <h2 class="rv" style="--i:1">O motor é bom. Está desligado.</h2>
+    <p class="lead rv" style="--i:2">Passamos pelo perfil como numa revisão de 20 pontos. A credibilidade da marca está em dia. O resto pede mão de obra.</p>
+
+    <div class="laudo">
+      <div class="card big rv">
+        <div>
+          <div class="lab" style="color:#cfd6ff">Último post no feed</div>
+          <div class="n"><span data-count="8">8</span><small>meses</small></div>
+          <p>Quem já segue a oficina deixou de ver o que ela faz. Quem não segue nunca viu.</p>
+        </div>
+        <div class="mini">
+          <div><b data-count="73">73</b><span>publicações no feed</span></div>
+          <div><b data-count="1061" data-fmt="1">1.061</b><span>seguidores, seguindo 460</span></div>
+          <div><b data-count="18">18</b><span>interações no último Reel</span></div>
+          <div><b>1 letra</b><span>faltando em "WhatsApp" na bio</span></div>
+        </div>
+      </div>
+
+      <div class="scores">
+        <div class="card sc rv" style="--v:9"><div class="h"><h3>Selo e credibilidade</h3><span class="v">Em dia · 9/10</span></div><div class="bar"><i></i></div><p>Bosch Car Service, WhatsApp na bio e post fixado com os serviços.</p></div>
+        <div class="card sc rv" style="--v:5;--i:1"><div class="h"><h3>Bio e conversão</h3><span class="v">Ajustar · 5/10</span></div><div class="bar"><i></i></div><p>Sem cidade, sem endereço completo e sem convite claro para agendar.</p></div>
+        <div class="card sc rv" style="--v:4;--i:2"><div class="h"><h3>Identidade e destaques</h3><span class="v">Ajustar · 4/10</span></div><div class="bar"><i></i></div><p>Um destaque chamado "Story" não diz o que o cliente vai achar lá dentro.</p></div>
+        <div class="card sc rv" style="--v:4;--i:3"><div class="h"><h3>Conteúdo e prova</h3><span class="v">Ajustar · 4/10</span></div><div class="bar"><i></i></div><p>Pouco antes e depois, pouco diagnóstico em vídeo, nenhum depoimento.</p></div>
+        <div class="card sc bad rv" style="--v:3;--i:4"><div class="h"><h3>Engajamento</h3><span class="v">Crítico · 3/10</span></div><div class="bar"><i></i></div><p>Cerca de 1,7% da base reagiu ao último Reel.</p></div>
+        <div class="card sc bad rv" style="--v:2;--i:5"><div class="h"><h3>Constância</h3><span class="v">Crítico · 2/10</span></div><div class="bar"><i></i></div><p>O algoritmo não empurra perfil que some. É a primeira coisa a consertar.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec has-bg" id="metodo">
+  <div class="sec-bg" style="background-image:url(img/maos.jpg)" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow lab rv">02 · Como a Pulse trabalha</div>
+    <h2 class="rv" style="--i:1">Oficina Aberta: o serviço é o conteúdo.</h2>
+    <p class="lead rv" style="--i:2">Você já tem material todo dia: o carro entrando, o diagnóstico, a peça trocada, o cliente saindo. Em vez de inventar post, a gente registra o que já acontece e transforma em anúncio.</p>
+
+    <div class="mech">
+      <div class="card st rv"><div class="no">1</div><h3>Gravamos o serviço real</h3><p>Câmera, microfone e drone dentro da oficina, em dias combinados com a sua rotina.</p></div>
+      <div class="card st rv" style="--i:1"><div class="no">2</div><h3>Viramos Reel e anúncio</h3><p>O mesmo vídeo roda no perfil e vira tráfego pago na região de Ceres.</p></div>
+      <div class="card st rv" style="--i:2"><div class="no">3</div><h3>A conversa cai no WhatsApp</h3><p>Todo conteúdo termina em um convite para agendar. A gente conta quantas mensagens chegaram.</p></div>
+    </div>
+    <div class="note rv"><b>Por que não é só "mais um post bonito"</b><span>Post bonito o mercado inteiro entrega. Aqui cada peça nasce de um serviço que a sua equipe fez e termina numa mensagem que você consegue contar.</span></div>
+  </div>
+</section>
+
+<section class="sec" id="escopo">
+  <div class="wrap">
+    <div class="eyebrow lab rv">03 · O que entra todo mês</div>
+    <h2 class="rv" style="--i:1">Quatro frentes, uma só equipe.</h2>
+    <p class="lead rv" style="--i:2">Você aprova pelo WhatsApp e não precisa montar nada.</p>
+
+    <div class="bento">
+      <div class="card bt a rv">
+        <div class="top"><div><div class="lab k">Frente 01</div><h3>Reels</h3></div><div class="q"><span data-count="4">4</span><small>por mês</small></div></div>
+        <ul><li>Planejamento e estratégia de cada roteiro, com gancho nos primeiros segundos</li><li>Captação na oficina com câmera Sony, microfone Hollyland e drone</li><li>Edição, legenda e capa</li></ul>
+      </div>
+      <div class="card bt b rv" style="--i:1">
+        <div class="lab k">Frente 02</div><h3>Feed</h3>
+        <div class="q" style="margin-top:22px;font-size:clamp(54px,6vw,84px)">1<small>imagem ou carrossel</small></div>
+        <ul><li>Dica, oferta sazonal ou serviço em destaque</li><li>Chamada para o WhatsApp</li></ul>
+      </div>
+      <div class="card bt c rv" style="--i:1">
+        <div class="lab k">Frente 03</div><h3>Stories</h3>
+        <ul><li>Planejamento e criação do conteúdo</li><li>Rotina da oficina, avisos, enquetes e perguntas</li><li>Destaques: Antes e Depois, Depoimentos, Localização, Promoções</li></ul>
+      </div>
+      <div class="card bt d rv" style="--i:2">
+        <div class="lab k">Frente 04</div><h3>Tráfego pago</h3>
+        <div class="cols">
+          <ul><li>Campanhas no Instagram e no Facebook, com o WhatsApp como destino</li><li>Segmentação por raio da cidade e por serviço</li></ul>
+          <ul><li>Mecânica, ar-condicionado, alinhamento, insulfilme</li><li>Configuração, acompanhamento e otimização contínua</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="fine rv"><span>Bio e estratégia andam em paralelo com a primeira gravação.</span><span>A verba dos anúncios é paga direto pelo contratante e não entra na mensalidade.</span></div>
+  </div>
+</section>
+
+<section class="sec" id="kit">
+  <div class="wrap">
+    <div class="eyebrow lab rv">04 · Equipamento e tecnologia</div>
+    <h2 class="rv" style="--i:1">O que entra na oficina com a gente.</h2>
+    <p class="lead rv" style="--i:2">Oficina é barulhenta, escura em alguns cantos e cheia de detalhe pequeno. O kit foi escolhido por isso.</p>
+
+    <div class="figs">
+      <figure class="fig rv"><img src="img/bastidor.jpg" alt="Equipe filmando um mecânico trabalhando" loading="lazy"><span class="ilu">Imagem ilustrativa</span><figcaption><b>Gravar faz parte do trabalho</b>A câmera entra na oficina e acompanha o serviço de perto.</figcaption></figure>
+      <figure class="fig rv" style="--i:1"><img src="img/drone.jpg" alt="Oficina vista de cima ao entardecer" loading="lazy"><span class="ilu">Imagem ilustrativa</span><figcaption><b>Ceres vista de cima</b>Plano de drone para abrir o Reel com a oficina no mapa.</figcaption></figure>
+    </div>
+
+    <div class="kit" style="margin-top:20px">
+      <div class="card tool rv"><div class="ic"><svg viewBox="0 0 64 64"><rect x="8" y="20" width="48" height="30" rx="5"/><path d="M22 20l3-6h14l3 6"/><circle cx="32" cy="35" r="9"/><circle cx="32" cy="35" r="3.5"/></svg></div><h3>Câmera Sony</h3><p>Imagem principal dos Reels. Detalhe de peça, motor e acabamento com profundidade de cinema.</p></div>
+      <div class="card tool rv" style="--i:1"><div class="ic"><svg viewBox="0 0 64 64"><rect x="25" y="6" width="14" height="28" rx="7"/><path d="M16 28c0 9 7 16 16 16s16-7 16-16M32 44v12M24 56h16"/></svg></div><h3>Microfone Hollyland</h3><p>Áudio limpo mesmo com compressor ligado e chave de impacto ao fundo. Voz clara segura o Reel.</p></div>
+      <div class="card tool rv" style="--i:2"><div class="ic"><svg viewBox="0 0 64 64"><rect x="19" y="5" width="26" height="54" rx="7"/><circle cx="29" cy="15" r="3"/><circle cx="37" cy="15" r="3"/><path d="M28 52h8"/></svg></div><h3>iPhone 17</h3><p>Bastidor, Stories e vertical rápido, com estabilização e cor consistentes no dia a dia.</p></div>
+      <div class="card tool rv" style="--i:3"><div class="ic"><svg viewBox="0 0 64 64"><circle cx="14" cy="14" r="6"/><circle cx="50" cy="14" r="6"/><circle cx="14" cy="50" r="6"/><circle cx="50" cy="50" r="6"/><rect x="24" y="26" width="16" height="12" rx="3"/><path d="M18 18l8 8M46 18l-8 8M18 46l8-8M46 46l-8-8"/></svg></div><h3>Drone DJI Mini 4 Pro</h3><p>A fachada, o pátio e Ceres vistos de cima. Plano de abertura que ninguém da região tem.</p></div>
+    </div>
+
+    <div class="ia">
+      <div class="card l rv"><div class="lab" style="color:var(--blue-2)">Inteligência artificial</div><h3 style="margin-top:14px">No processo, não no rosto.</h3></div>
+      <div class="rows rv" style="--i:1">
+        <div class="r"><b>Entra</b><span>Roteiros em volume, cortes e legendas mais rápidos, leitura dos números dos anúncios para ajustar a verba.</span></div>
+        <div class="r"><b>Ganha</b><span>Tempo de equipe para gravar e testar mais ideias por mês, sem aumentar o valor da proposta.</span></div>
+        <div class="r no"><b>Não entra</b><span>O carro, a equipe e a voz do dono. O que aparece no seu perfil é a oficina de verdade.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="noventa">
+  <div class="wrap">
+    <div class="eyebrow lab rv">05 · Primeiros 90 dias</div>
+    <h2 class="rv" style="--i:1">Do perfil parado ao agendamento.</h2>
+    <div class="road">
+      <div class="card rd rv"><span class="m lab">Mês 1</span><h3>Arrumar a casa</h3><ul><li>Briefing e acesso às contas</li><li>Bio nova com cidade, serviços e WhatsApp</li><li>Destaques renomeados</li><li>Estratégia de Reels e calendário para aprovação</li><li>Primeiras gravações na oficina</li></ul></div>
+      <div class="card rd rv" style="--i:1"><span class="m lab">Mês 2</span><h3>Ligar o motor</h3><ul><li>Reels no ar e Stories com rotina fixa</li><li>Primeiras campanhas de tráfego pago</li><li>Teste de ganchos e formatos</li><li>Ajustes semanais nos anúncios</li></ul></div>
+      <div class="card rd rv" style="--i:2"><span class="m lab">Mês 3</span><h3>Contar as mensagens</h3><ul><li>Campanha sazonal com oferta</li><li>Anúncios no raio de Ceres e região</li><li>Relatório com mensagens recebidas no WhatsApp</li><li>Decisão sobre onde colocar mais verba</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="investimento">
+  <div class="wrap">
+    <div class="eyebrow lab rv">06 · Investimento</div>
+    <h2 class="rv" style="--i:1">Quanto custa colocar a oficina na rua.</h2>
+
+    <div class="price-wrap rv">
+      <div class="price">
+        <div class="pl">
+          <div class="lab" style="color:var(--blue-2)">Mensalidade Pulse</div>
+          <div class="val"><sup>R$</sup><span data-count="1500" data-fmt="1">1.500</span><small>/mês</small></div>
+          <p>Reels, feed, Stories e gestão de tráfego pago no mesmo valor. Dá R$ 50 por dia para a oficina aparecer todo dia. Contrato trimestral, com início imediato após a assinatura.</p>
+          <a class="cta in" href="https://wa.me/5562985154115?text=Quero%20aprovar%20a%20proposta%20da%20Pulse%20para%20a%203A%20Bosch">Assinar e começar
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="pr">
+          <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Início imediato</b>Assinou o contrato, a gente já pede os acessos e marca a primeira gravação.</span></div>
+          <div><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><span><b>Contrato trimestral</b>Três meses, o tempo de tirar o perfil do zero e contar as mensagens que chegaram.</span></div>
+          <div><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><span><b>Aprovação antes de postar</b>Todo conteúdo passa pelo grupo de WhatsApp antes de ir ao ar.</span></div>
+          <div><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4zM4 11h16"/></svg><span><b>Verba de anúncio separada</b>Você define o valor e paga direto na plataforma. A Pulse planeja e otimiza.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="rv"><b>1. Você assina</b>Contrato trimestral, sem espera para começar.</div>
+      <div class="rv" style="--i:1"><b>2. Início imediato</b>Assinou, a gente começa no mesmo dia: acessos, briefing e conversa sobre os serviços que mais dão lucro.</div>
+      <div class="rv" style="--i:2"><b>3. Primeira gravação</b>Equipamento na porta da oficina e primeiro Reel no ar.</div>
+    </div>
+  </div>
+</section>
+
+<section class="fin" id="quem">
+  <div class="wrap">
+    <div class="pt rv"><div class="im"><img src="foto.png" alt="Responsável pela Pulse Marketing Digital" loading="lazy"><div class="nm"><b>Pulse Marketing Digital</b>Responsável pela agência</div></div></div>
+    <div>
+      <div class="eyebrow lab rv">07 · Quem assina</div>
+      <h2 class="rv" style="--i:1">Marketing e venda na mesma mão.</h2>
+      <p class="lead rv" style="--i:2">A Pulse Marketing Digital é especialista em marketing digital e vendas. Quem escreve o roteiro entende de anúncio, e quem sobe o anúncio sabe qual vídeo vende. Nada passa de mesa em mesa.</p>
+      <div class="skills rv" style="--i:3"><span>Tráfego pago</span><span>Copy</span><span>Design</span><span>Edição</span><span>Inteligência artificial</span></div>
+      <a class="cta rv" style="--i:4" href="https://wa.me/5562985154115?text=Quero%20aprovar%20a%20proposta%20da%20Pulse%20para%20a%203A%20Bosch">Vamos ligar esse motor
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<footer><span>Pulse Marketing Digital</span><span>Proposta para 3A Bosch Car Service · Ceres-GO</span></footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function count(el){
+    if(reduce)return;
+    var to=+el.dataset.count,f=el.dataset.fmt,node=el.firstChild;
+    if(!node||node.nodeType!==3)return;
+    var t0=null;
+    (function step(t){t0=t0||t;var p=Math.min((t-t0)/1400,1),e=1-Math.pow(1-p,4),v=Math.round(to*e);node.nodeValue=f?v.toLocaleString('pt-BR'):String(v);if(p<1)requestAnimationFrame(step)})(performance.now());
+  }
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add('in');io.unobserve(e.target);
+    e.target.querySelectorAll('[data-count]').forEach(count);
+  })},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(e){io.observe(e)});
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('pointermove',function(ev){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(ev.clientX-r.left)+'px');c.style.setProperty('--my',(ev.clientY-r.top)+'px')});
+  });
+})();
+</script>
+</body>
+</html>
